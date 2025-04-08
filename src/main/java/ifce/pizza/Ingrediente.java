@@ -1,7 +1,7 @@
 package ifce.pizza;
 
 
-record Ingrediente(
+public record Ingrediente(
         String ingredienteId,
         String nome,
         boolean disponibilizado,
