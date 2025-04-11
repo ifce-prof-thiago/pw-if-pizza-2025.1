@@ -2,9 +2,7 @@ package ifce.pizza;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
@@ -15,31 +13,23 @@ public class IngredienteController {
     @Autowired
     private JdbcTemplate jdbc;
 
-    @GetMapping
-    public Ingrediente buscarIngredientes(
-            String nome,
-            boolean disponibilizado,
-            double precoP,
-            double precoM,
-            double precoG
+    @PostMapping
+    public Response criar(
+            @RequestBody Ingrediente ingrediente
     ) {
         var id = UUID.randomUUID().toString();
         jdbc.update(
                 "INSERT INTO Ingrediente VALUES (?, ?, ?, ?, ?, ?)",
                 id,
-                nome,
-                disponibilizado,
-                precoP,
-                precoM,
-                precoG
+                ingrediente.nome(),
+                ingrediente.disponibilizado(),
+                ingrediente.precoP(),
+                ingrediente.precoM(),
+                ingrediente.precoG()
         );
-        return new Ingrediente(
-                id,
-                nome,
-                disponibilizado,
-                precoP,
-                precoM,
-                precoG
-        );
+        return new Response(id);
+    }
+
+    record Response(String id) {
     }
 }

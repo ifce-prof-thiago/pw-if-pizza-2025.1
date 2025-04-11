@@ -8,3 +8,5 @@ CREATE TABLE Ingrediente
     preco_g         decimal(5, 2)
 );
 
+
+
