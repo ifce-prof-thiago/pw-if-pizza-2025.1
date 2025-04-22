@@ -11,9 +11,9 @@
 16402||16405|C|G
 16403||10|C|G
 16403||16405|C|G</Grants>
-      <IntrospectionStateNumber>1410</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1493</IntrospectionStateNumber>
       <ServerVersion>17.2</ServerVersion>
-      <StartupTime>1744148946</StartupTime>
+      <StartupTime>1745357933</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -306,9 +306,9 @@ false Asia/Dili
 false Asia/Dubai
 false Asia/Dushanbe
 true Asia/Famagusta
-false Asia/Gaza
+true Asia/Gaza
 false Asia/Harbin
-false Asia/Hebron
+true Asia/Hebron
 false Asia/Ho_Chi_Minh
 false Asia/Hong_Kong
 false Asia/Hovd
@@ -816,7 +816,7 @@ false Zulu
 13219||10|C|G
 13219||-9223372036854775808|U|G
 13219||10|U|G</Grants>
-      <IntrospectionStateNumber>1410</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1493</IntrospectionStateNumber>
       <ObjectId>18089</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4279,91 +4279,173 @@ false Zulu
     <schema id="274" parent="4" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1410</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2025-04-08.22:13:36</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>1493</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2025-04-22.22:23:29</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>531</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
     <table id="275" parent="274" name="ingrediente">
-      <ObjectId>18101</ObjectId>
-      <StateNumber>1409</StateNumber>
+      <ObjectId>18113</ObjectId>
+      <StateNumber>1463</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="276" parent="275" name="ingrediente_id">
+    <table id="276" parent="274" name="pizza">
+      <ObjectId>18137</ObjectId>
+      <StateNumber>1492</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="277" parent="275" name="ingrediente_id">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>1409</StateNumber>
+      <StateNumber>1463</StateNumber>
       <StoredType>char(36)|0s</StoredType>
       <TypeId>1042</TypeId>
     </column>
-    <column id="277" parent="275" name="nome">
+    <column id="278" parent="275" name="nome">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>1409</StateNumber>
+      <StateNumber>1463</StateNumber>
       <StoredType>varchar(100)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="278" parent="275" name="disponibilizado">
+    <column id="279" parent="275" name="disponibilizado">
       <Position>3</Position>
-      <StateNumber>1409</StateNumber>
+      <StateNumber>1463</StateNumber>
       <StoredType>boolean|0s</StoredType>
       <TypeId>16</TypeId>
     </column>
-    <column id="279" parent="275" name="preco_p">
+    <column id="280" parent="275" name="preco_p">
       <Position>4</Position>
-      <StateNumber>1409</StateNumber>
+      <StateNumber>1463</StateNumber>
       <StoredType>numeric(5,2 digit)|0s</StoredType>
       <TypeId>1700</TypeId>
     </column>
-    <column id="280" parent="275" name="preco_m">
+    <column id="281" parent="275" name="preco_m">
       <Position>5</Position>
-      <StateNumber>1409</StateNumber>
+      <StateNumber>1463</StateNumber>
       <StoredType>numeric(5,2 digit)|0s</StoredType>
       <TypeId>1700</TypeId>
     </column>
-    <column id="281" parent="275" name="preco_g">
+    <column id="282" parent="275" name="preco_g">
       <Position>6</Position>
-      <StateNumber>1409</StateNumber>
+      <StateNumber>1463</StateNumber>
       <StoredType>numeric(5,2 digit)|0s</StoredType>
       <TypeId>1700</TypeId>
     </column>
-    <index id="282" parent="275" name="ingrediente_pkey">
+    <index id="283" parent="275" name="ingrediente_pkey">
       <ColNames>ingrediente_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>18104</ObjectId>
+      <ObjectId>18116</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1409</StateNumber>
+      <StateNumber>1463</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <index id="283" parent="275" name="ingrediente_nome_key">
+    <index id="284" parent="275" name="ingrediente_nome_key">
       <ColNames>nome</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>18106</ObjectId>
-      <StateNumber>1409</StateNumber>
+      <ObjectId>18118</ObjectId>
+      <StateNumber>1463</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="284" parent="275" name="ingrediente_pkey">
+    <key id="285" parent="275" name="ingrediente_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>18105</ObjectId>
+      <ObjectId>18117</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1409</StateNumber>
-      <UnderlyingIndexId>18104</UnderlyingIndexId>
+      <StateNumber>1463</StateNumber>
+      <UnderlyingIndexId>18116</UnderlyingIndexId>
     </key>
-    <key id="285" parent="275" name="ingrediente_nome_key">
+    <key id="286" parent="275" name="ingrediente_nome_key">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>18107</ObjectId>
-      <StateNumber>1409</StateNumber>
-      <UnderlyingIndexId>18106</UnderlyingIndexId>
+      <ObjectId>18119</ObjectId>
+      <StateNumber>1463</StateNumber>
+      <UnderlyingIndexId>18118</UnderlyingIndexId>
+    </key>
+    <check id="287" parent="276" name="ck_ta">
+      <ColNames>tamanho</ColNames>
+      <ObjectId>18140</ObjectId>
+      <Predicate>tamanho = ANY (ARRAY[&apos;P&apos;::bpchar, &apos;M&apos;::bpchar, &apos;G&apos;::bpchar])</Predicate>
+      <StateNumber>1492</StateNumber>
+    </check>
+    <column id="288" parent="276" name="pizza_id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>1492</StateNumber>
+      <StoredType>char(36)|0s</StoredType>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="289" parent="276" name="nome">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>1492</StateNumber>
+      <StoredType>varchar(100)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="290" parent="276" name="disponibilizado">
+      <Position>3</Position>
+      <StateNumber>1492</StateNumber>
+      <StoredType>boolean|0s</StoredType>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="291" parent="276" name="tamanho">
+      <Position>4</Position>
+      <StateNumber>1492</StateNumber>
+      <StoredType>char|0s</StoredType>
+      <TypeId>1042</TypeId>
+    </column>
+    <column id="292" parent="276" name="preco">
+      <Position>5</Position>
+      <StateNumber>1492</StateNumber>
+      <StoredType>numeric(5,2 digit)|0s</StoredType>
+      <TypeId>1700</TypeId>
+    </column>
+    <index id="293" parent="276" name="pizza_pkey">
+      <ColNames>pizza_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>18141</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1492</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <index id="294" parent="276" name="uk_no_ta">
+      <ColNames>nome
+tamanho</ColNames>
+      <ObjectId>18143</ObjectId>
+      <StateNumber>1492</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100
+100</CollationIds>
+      <CollationNames>default
+default</CollationNames>
+      <CollationParentNames>pg_catalog
+pg_catalog</CollationParentNames>
+    </index>
+    <key id="295" parent="276" name="pizza_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>18142</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1492</StateNumber>
+      <UnderlyingIndexId>18141</UnderlyingIndexId>
+    </key>
+    <key id="296" parent="276" name="uk_no_ta">
+      <ObjectId>18144</ObjectId>
+      <StateNumber>1492</StateNumber>
+      <UnderlyingIndexId>18143</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>
