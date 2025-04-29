@@ -1,5 +1,6 @@
-package ifce.pizza;
+package ifce.pizza.controllers;
 
+import ifce.pizza.Ingrediente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.*;

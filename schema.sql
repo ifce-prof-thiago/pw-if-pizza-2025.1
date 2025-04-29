@@ -20,3 +20,13 @@ create table Pizza
     CONSTRAINT ck_ta CHECK ( tamanho IN ('P', 'M', 'G') )
 );
 
+create table Pizza_Ingrediente
+(
+    pizza_id       char(36),
+    ingrediente_id char(36),
+
+    PRIMARY KEY (pizza_id, ingrediente_id),
+    CONSTRAINT fk_ingrediente_id FOREIGN KEY (ingrediente_id) REFERENCES Ingrediente (ingrediente_id),
+    CONSTRAINT fk_pizza_id FOREIGN KEY (pizza_id) REFERENCES Pizza (pizza_id)
+);
+
