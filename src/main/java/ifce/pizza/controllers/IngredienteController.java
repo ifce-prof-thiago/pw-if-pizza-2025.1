@@ -1,10 +1,12 @@
 package ifce.pizza.controllers;
 
 import ifce.pizza.Ingrediente;
+import ifce.pizza.usecases.ingredientes.BuscarIngredientes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -13,6 +15,13 @@ public class IngredienteController {
 
     @Autowired
     private JdbcTemplate jdbc;
+    @Autowired
+    private BuscarIngredientes buscarIngredientes;
+
+    @GetMapping
+    public List<BuscarIngredientes.Response> buscarTodos() {
+        return buscarIngredientes.execute();
+    }
 
     @PostMapping
     public Response criar(
