@@ -1,5 +1,6 @@
 package ifce.pizza.tables;
 
+import ifce.pizza.tables.ids.PizzaIngredienteId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
@@ -9,9 +10,4 @@ import java.util.UUID;
 public record PizzaIngrediente(
         @Id PizzaIngredienteId id
 ) {
-    public record PizzaIngredienteId(
-            UUID pizzaId,
-            UUID ingredienteId
-    ) {
-    }
 }
