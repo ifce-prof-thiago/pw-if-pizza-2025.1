@@ -1,7 +1,9 @@
 package ifce.pizza.controllers;
 
 import ifce.pizza.Ingrediente;
+import ifce.pizza.usecases.ingredientes.AtualizarIngrediente;
 import ifce.pizza.usecases.ingredientes.BuscarIngredientes;
+import ifce.pizza.usecases.ingredientes.CriarIngrediente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.*;
@@ -14,9 +16,13 @@ import java.util.UUID;
 public class IngredienteController {
 
     @Autowired
-    private JdbcTemplate jdbc;
-    @Autowired
     private BuscarIngredientes buscarIngredientes;
+
+    @Autowired
+    private CriarIngrediente criarIngrediente;
+
+    @Autowired
+    private AtualizarIngrediente atualizarIngrediente;
 
     @GetMapping
     public List<BuscarIngredientes.Response> buscarTodos() {
@@ -24,22 +30,12 @@ public class IngredienteController {
     }
 
     @PostMapping
-    public Response criar(
-            @RequestBody Ingrediente ingrediente
-    ) {
-        var id = UUID.randomUUID().toString();
-        jdbc.update(
-                "INSERT INTO Ingrediente VALUES (?, ?, ?, ?, ?, ?)",
-                id,
-                ingrediente.nome(),
-                ingrediente.disponibilizado(),
-                ingrediente.precoP(),
-                ingrediente.precoM(),
-                ingrediente.precoG()
-        );
-        return new Response(id);
+    public CriarIngrediente.Output criar(@RequestBody CriarIngrediente.Input input) {
+        return criarIngrediente.execute(input);
     }
 
-    record Response(String id) {
+    @PutMapping
+    public void atualizar(@RequestBody AtualizarIngrediente.Input input) {
+        atualizarIngrediente.execute(input);
     }
 }
