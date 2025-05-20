@@ -18,7 +18,7 @@ public class IndisponibilizarIngrediente {
             WHERE ingrediente_id=:ingrediente_id
             """;
 
-    public void execute(AtualizarIngrediente.Input in) {
+    public void execute(Input in) {
         var params = new MapSqlParameterSource()
                 .addValue("ingrediente_id", in.id());
 
@@ -26,6 +26,5 @@ public class IndisponibilizarIngrediente {
     }
 
     public record Input(String id) {
-
     }
 }

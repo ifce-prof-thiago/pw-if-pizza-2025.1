@@ -1,15 +1,12 @@
 package ifce.pizza.controllers;
 
-import ifce.pizza.Ingrediente;
 import ifce.pizza.usecases.ingredientes.AtualizarIngrediente;
 import ifce.pizza.usecases.ingredientes.BuscarIngredientes;
 import ifce.pizza.usecases.ingredientes.CriarIngrediente;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("ingredientes")
@@ -25,7 +22,7 @@ public class IngredienteController {
     private AtualizarIngrediente atualizarIngrediente;
 
     @GetMapping
-    public List<BuscarIngredientes.Response> buscarTodos() {
+    public List<BuscarIngredientes.Output> buscarTodos() {
         return buscarIngredientes.execute();
     }
 
