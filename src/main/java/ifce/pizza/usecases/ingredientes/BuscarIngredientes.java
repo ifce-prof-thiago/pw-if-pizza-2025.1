@@ -18,10 +18,10 @@ public class BuscarIngredientes {
     private NamedParameterJdbcTemplate jdbc;
 
     public List<Output> execute() {
-        return jdbc.query(SQL, mapperToResponse());
+        return jdbc.query(SQL, mapperToOutput());
     }
 
-    private static RowMapper<Output> mapperToResponse() {
+    private static RowMapper<Output> mapperToOutput() {
         return (row, _number) -> new Output(
                 row.getString("ingrediente_id"),
                 row.getString("nome"),

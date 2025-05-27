@@ -5,12 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="264fda86-4ee4-4f89-840b-2b6212f0d43e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.10/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ifce/pizza/controllers/IngredienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ifce/pizza/controllers/IngredienteController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ifce/pizza/usecases/ingredientes/AtualizarIngrediente$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ifce/pizza/usecases/ingredientes/AtualizarIngrediente$Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ifce/pizza/usecases/ingredientes/AtualizarIngrediente.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ifce/pizza/usecases/ingredientes/AtualizarIngrediente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ifce/pizza/usecases/ingredientes/BuscarIngredientes$Response.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ifce/pizza/usecases/ingredientes/BuscarIngredientes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ifce/pizza/usecases/ingredientes/BuscarIngredientes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ifce/pizza/usecases/ingredientes/DisponibilizarIngrediente.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ifce/pizza/usecases/ingredientes/DisponibilizarIngrediente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ifce/pizza/usecases/ingredientes/ExcluirIngrediente.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ifce/pizza/usecases/ingredientes/ExcluirIngrediente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ifce/pizza/usecases/ingredientes/IndisponibilizarIngrediente.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ifce/pizza/usecases/ingredientes/IndisponibilizarIngrediente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AtualizarIngrediente.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/IngredienteController.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifce/pizza/controllers/IngredienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifce/pizza/controllers/IngredienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifce/pizza/usecases/ingredientes/AtualizarIngrediente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifce/pizza/usecases/ingredientes/AtualizarIngrediente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifce/pizza/controllers/PizzaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifce/pizza/usecases/ingredientes/BuscarIngredientePorId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifce/pizza/usecases/ingredientes/BuscarIngredientePorId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifce/pizza/usecases/ingredientes/BuscarIngredientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifce/pizza/usecases/ingredientes/BuscarIngredientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifce/pizza/usecases/ingredientes/BuscarIngredientesPorFiltro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifce/pizza/usecases/ingredientes/BuscarIngredientesPorFiltro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ifce/pizza/usecases/ingredientes/DisponibilizarIngrediente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifce/pizza/usecases/ingredientes/DisponibilizarIngrediente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ifce/pizza/usecases/ingredientes/IndisponibilizarIngrediente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifce/pizza/usecases/ingredientes/IndisponibilizarIngrediente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ifce/pizza/usecases/ingredientes/ExcluirIngrediente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ifce/pizza/usecases/ingredientes/ExcluirIngrediente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +162,11 @@
       <workItem from="1747266382623" duration="912000" />
       <workItem from="1747352059933" duration="4087000" />
       <workItem from="1747578713414" duration="8000" />
-      <workItem from="1747776367302" duration="747000" />
+      <workItem from="1747776367302" duration="2374000" />
+      <workItem from="1747914909427" duration="13000" />
+      <workItem from="1747957223471" duration="3263000" />
+      <workItem from="1748368572127" duration="142000" />
+      <workItem from="1748381691584" duration="2648000" />
     </task>
     <servers />
   </component>

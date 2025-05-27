@@ -7,20 +7,19 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class DisponibilizarIngrediente {
-
-    @Autowired
-    private NamedParameterJdbcTemplate jdbc;
-
     private static final String SQL = """
             UPDATE Ingrediente
             SET
                 disponibilizado=true
-            WHERE ingrediente_id=:ingrediente_id
+            WHERE ingrediente_id=:id
             """;
+
+    @Autowired
+    private NamedParameterJdbcTemplate jdbc;
 
     public void execute(Input in) {
         var params = new MapSqlParameterSource()
-                .addValue("ingrediente_id", in.id());
+                .addValue("id", in.id());
 
         jdbc.update(SQL, params);
     }
