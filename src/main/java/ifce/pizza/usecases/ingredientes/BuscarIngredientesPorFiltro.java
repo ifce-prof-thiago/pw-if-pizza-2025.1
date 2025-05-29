@@ -11,7 +11,7 @@ import java.util.List;
 public class BuscarIngredientesPorFiltro {
 
     private final static String SQL = """
-            SELECT * FROM Ingrediente WHERE nome LIKE :nome AND disponibilizado = :disponibilizado
+            SELECT * FROM Ingrediente WHERE nome ILIKE :nome AND disponibilizado = :disponibilizado
             """;
 
     @Autowired

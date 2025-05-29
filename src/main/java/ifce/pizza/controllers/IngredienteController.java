@@ -33,7 +33,11 @@ public class IngredienteController {
     }
 
     @GetMapping
-    public List<BuscarIngredientesPorFiltro.Output> buscarPorFiltro(@RequestBody BuscarIngredientesPorFiltro.Input input){
+    public List<BuscarIngredientesPorFiltro.Output> buscarPorFiltro(
+            @RequestParam(defaultValue = "") String nome,
+            @RequestParam(defaultValue = "true") boolean disponibilizado
+    ){
+        var input = new BuscarIngredientesPorFiltro.Input(nome, disponibilizado);
         return buscarIngredientesPorFiltro.execute(input);
     }
 }
